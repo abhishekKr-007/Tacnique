@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+}
+
+.header, .controls, .filter-panel, .footer {
+  margin-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #008cba;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.search-bar input {
+  padding: 8px;
+  width: 200px;
+}
+
+.employee-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.employee-card {
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  padding: 6px 10px;
+  background: #008cba;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #006a93;
+}
+
+.add-btn {
+  background-color: #4CAF50;
+}
+
+.filter-panel {
+  padding: 10px;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-container {
+  padding: 40px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .employee-list {
+    grid-template-columns: 1fr;
+  }
+}
